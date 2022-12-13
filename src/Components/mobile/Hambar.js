@@ -3,7 +3,7 @@ import { Link, Outlet } from "react-router-dom";
 const Hambar = () => {
   return (
     <>
-      <div className="sm:hidden flex justify-around items-center bg-quaternary-color h-16">
+      <div className="lg:hidden flex justify-evenly items-center bg-quaternary-color h-16">
         <Link to="/">
           <img
             src={require("../../assests/images/Animated Icons/logo.png")}
@@ -12,7 +12,12 @@ const Hambar = () => {
           />
         </Link>
         <Link to="/" className="text-white text-lg font-semibold">
-          XD Store
+          XD STORE
+        </Link>
+        <Link to="Login" className="max-sm:hidden">
+          <span className="bg-leaf-darker-color leaf-light-color rounded px-3 py-2 shadow ">
+            Login/Signup
+          </span>
         </Link>
         <div className="flex items-center ">
           <svg
@@ -51,7 +56,7 @@ const Hambar = () => {
           </div>
         </div>
       </div>
-      <Outlet/>
+      <Outlet />
     </>
   );
 };
