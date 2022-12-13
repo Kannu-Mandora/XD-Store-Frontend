@@ -1,0 +1,67 @@
+.primary-color {
+    color: var(--primary-color);
+}
+.secondary-color {
+    color: var(--secondary-color);
+}
+.tertiary-color {
+    color: var(--tertiary-color);
+}
+.quaternary-color {
+    color: var(--quaternary-color);
+}
+.leaf-lightest-color {
+    color: var(--leaf-lightest-color);
+}
+.leaf-light-color {
+    color: var(--leaf-light-color);
+}
+.leaf-dim-color {
+    color: var(--leaf-dim-color);
+}
+.leaf-dark-color {
+    color: var(--leaf-dark-color);
+}
+.leaf-darker-color {
+    color: var(--leaf-darker-color);
+}
+.leaf-darkest-color {
+    color: var(--leaf-darkest-color);
+}
+.primary-font {
+    font-family: var(--primary-font);
+}
+.secondary-font {
+    font-family: var(--secondary-font);
+}
+.bg-primary-color {
+    background-color: var(--primary-color);
+}
+.bg-secondary-color {
+    background-color: var(--secondary-color);
+}
+.bg-tertiary-color {
+    background-color: var(--tertiary-color);
+}
+.bg-quaternary-color {
+    background-color: var(--quaternary-color);
+}
+.bg-leaf-lightest-color {
+    background-color: var(--leaf-lightest-color);
+}
+.bg-leaf-light-color {
+    background-color: var(--leaf-light-color);
+}
+.bg-leaf-dim-color {
+    background-color: var(--leaf-dim-color);
+}
+.bg-leaf-dark-color {
+    background-color: var(--leaf-dark-color);
+}
+.bg-leaf-darker-color {
+    background-color: var(--leaf-darker-color);
+}
+.bg-leaf-darkest-color {
+    background-color: var(--leaf-darkest-color);
+}
+
