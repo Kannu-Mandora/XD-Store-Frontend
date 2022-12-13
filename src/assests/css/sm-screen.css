@@ -1,1 +1,22 @@
-@media screen and (width<=640px) {}
+@media screen and (width<=640px) {
+   .productData{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   .productData  div{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0 5px;
+      width: 6rem;
+   }
+   .productData img{
+      width: 30px;
+   }
+   .productData span{
+      font-size: 14px;
+   }
+
+}

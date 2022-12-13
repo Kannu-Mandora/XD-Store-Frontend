@@ -3,10 +3,12 @@
 @import "./assests/css/sm-screen.css";
 @import "./assests/css/md-screen.css";
 @import "./assests/css/custom.css";
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--primary-font);
 }
 
 :root {
@@ -22,4 +24,13 @@
     --leaf-darkest-color: #7DB19B;
     --primary-font: 'Poppins', sans-serif;
     --secondary-font: 'Titillium Web', sans-serif;
+}
+
+.scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.scrollbar::-webkit-scrollbar {
+    display: none;
 }
