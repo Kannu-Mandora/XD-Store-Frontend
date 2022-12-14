@@ -1,24 +1,16 @@
 import React from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
+import Logo from "../jsx/Logo";
+import Loginbtn from "../jsx/Loginbtn";
 const Hambar = () => {
   return (
     <>
       <div className="lg:hidden flex justify-evenly items-center bg-quaternary-color h-16">
-        <Link to="/">
-          <img
-            src={require("../../assests/images/Animated Icons/logo.png")}
-            alt="XD"
-            className="w-10"
-          />
-        </Link>
+        <Logo/>
         <Link to="/" className="text-white text-lg font-semibold">
           XD STORE
         </Link>
-        <Link to="Login" className="max-sm:hidden">
-          <span className="bg-leaf-darker-color leaf-light-color rounded px-3 py-2 shadow ">
-            Login/Signup
-          </span>
-        </Link>
+        <Loginbtn />
         <div className="flex items-center ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -56,7 +48,6 @@ const Hambar = () => {
           </div>
         </div>
       </div>
-      <Outlet />
     </>
   );
 };

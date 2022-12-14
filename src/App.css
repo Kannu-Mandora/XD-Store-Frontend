@@ -35,6 +35,17 @@
     display: none;
 }
 
-.titillium{
+.titillium {
     font-family: var(--secondary-font);
+}
+
+.active {
+    color: white;
+    background-color: var(--leaf-darkest-color);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.effect {
+    transition: all 0.3s ease;
 }
