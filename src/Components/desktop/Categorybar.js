@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 const Categorybar = () => {
   return (
     <>
-      <hr className="border-black" />
+      <hr className="max-lg:hidden border-black" />
       <div className="max-lg:hidden flex justify-center items-center text-white bg-primary-color h-16 productNavbar">
         <NavLink to="BestSeller" className="productNavlist">Best Sellers</NavLink>
         <NavLink to="Mobiles" className="productNavlist">Mobiles</NavLink>
@@ -13,7 +13,7 @@ const Categorybar = () => {
         <NavLink to="Kitchen" className="productNavlist">Home&Kitchen</NavLink>
         <NavLink to="Books" className="productNavlist">Books</NavLink>
       </div>
-      <hr className="border-black" />
+      <hr className="max-lg:hidden border-black" />
     </>
   );
 };
