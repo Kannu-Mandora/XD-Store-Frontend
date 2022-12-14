@@ -23,7 +23,7 @@ const Productbars = () => {
       <span>Today Deals</span>
     </div>
     </Link>
-    <Link to="bestSeller">
+    <Link to="BestSeller">
     <div>
       <img src={require("../../assests/images/Animated Icons/bestSeller.png")} alt="Best Seller" />
       <span>Best Seller</span>

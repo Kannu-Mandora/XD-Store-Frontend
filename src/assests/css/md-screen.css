@@ -1,7 +1,16 @@
 @media screen and (width>=1024px) {
-   .navlist .navlink{
+   .navlist .navlink {
       margin: 0.5rem;
-    padding: 5px 10px;
-    transition: all 0.3s ease;
+      padding: 5px 10px;
+      transition: all 0.3s ease;
+   }
+   
+   .productNavbar .productNavlist {
+      margin:0 2.5rem;
+      padding: 5px 10px;
+      transition: all 0.3s ease;
+   }
+   .productNavbar .productNavlist:focus{
+      color: var(--leaf-lightest-color);
    }
 }
