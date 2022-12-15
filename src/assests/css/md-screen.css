@@ -10,7 +10,10 @@
       padding: 5px 10px;
       transition: all 0.3s ease;
    }
-   .productNavbar .productNavlist:focus{
-      color: var(--leaf-lightest-color);
+
+   .productNavbar .productNavlist:hover{
+      color: black !important;
+      background-color: var(--leaf-lightest-color);
+      border-radius: 5px;
    }
 }

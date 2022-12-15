@@ -18,5 +18,8 @@
    .productData span{
       font-size: 14px;
    }
+   #cancel{
+      scale: 0.5;
+   }
 
 }

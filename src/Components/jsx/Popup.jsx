@@ -21,9 +21,12 @@ const Popup = () => {
       nodisplay: "flex",
     });
   };
+  const hide = () => {
+    document.querySelector("#cancel").classList.add("hidden");
+  };
   return (
     <>
-      <section className="flex justify-center items-center my-10  relative">
+      <section className="flex justify-center items-center my-10" id="cancel">
         <div className="flex flex-col items-start justify-start w-52 h-96 bg-leaf-dim-color quaternary-color">
           <h1 className="text-black font-semibold text-xl m-3 titillium">
             {login.main}
@@ -32,7 +35,8 @@ const Popup = () => {
             Get access to your Orders, Wishlist and Recommendations
           </span>
         </div>
-        <div className="flex flex-col items-center justify-start w-96 h-96 bg-quaternary-color text-white">
+        <div className="flex flex-col items-center justify-start w-96 h-96 bg-quaternary-color text-white relative">
+        <img src={require("../../assests/images/Animated Icons/cancel.png")} alt="Cancel" className="w-10 absolute top-0 -right-14"  onClick={hide}  />
           <div className="flex flex-col mx-3 my-4">
             <label className="my-1 text-sm">
               Enter Mobile Number or Email Address
