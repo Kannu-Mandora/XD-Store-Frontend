@@ -1,4 +1,4 @@
-import React,{ useState } from "react";
+import React, { useState } from "react";
 const Seller = () => {
   const [Hide, setHide] = useState({
     show: "flex",
@@ -8,6 +8,12 @@ const Seller = () => {
     setHide({
       show: "hidden",
       hide: "flex",
+    });
+  };
+  const showTheSection = () => {
+    setHide({
+      show: "flex",
+      hide: "hidden",
     });
   };
   return (
@@ -198,8 +204,14 @@ const Seller = () => {
                   ></textarea>
                 </div>
               </div>
-              <div className="p-2 w-full">
-                <button className="flex mx-auto text-white hover:text-green-400 bg-primary-color border-0 py-2 px-8 focus:outline-none  rounded text-lg">
+              <div className="flex justify-between p-2 w-full">
+                <button
+                  className="mx-auto text-white hover:text-green-400 bg-primary-color border-0 py-1 px-4 focus:outline-none  rounded text-lg before:content-['⬅️'] max-sm:w-40"
+                  onClick={showTheSection}
+                >
+                  Go Back
+                </button>
+                <button className="mx-auto text-white hover:text-green-400 bg-primary-color border-0 py-1 px-4 focus:outline-none  rounded text-lg after:content-['➡️'] max-sm:w-40">
                   Submit Your Details
                 </button>
               </div>
