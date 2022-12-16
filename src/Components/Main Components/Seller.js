@@ -1,5 +1,4 @@
-import React from "react";
-import { useState } from "react";
+import React,{ useState } from "react";
 const Seller = () => {
   const [Hide, setHide] = useState({
     show: "flex",
