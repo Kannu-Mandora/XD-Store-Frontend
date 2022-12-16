@@ -16,4 +16,11 @@
       background-color: var(--leaf-lightest-color);
       border-radius: 5px;
    }
+   #cancel{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      scale: 1.25;
+      overflow: hidden;
+   }
 }
