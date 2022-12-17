@@ -12,7 +12,7 @@ const Main = () => {
       </div>
       <Categorybar />
       <Sale/>
-      <div className="flex justify-start items-center cards overflow-x-scroll my-4 w-screen">
+      <div className="flex justify-start items-center cards overflow-x-scroll my-4">
       <Cards/>
       </div>
     </>

@@ -65,3 +65,7 @@
 .cards>* {
     margin: 1rem;
 }
+
+.footer-transition li *::before{
+    content: "> ";
+}
