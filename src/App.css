@@ -22,6 +22,18 @@
     --leaf-dark-color: #9ED5C5;
     --leaf-darker-color: #8EC3B0;
     --leaf-darkest-color: #7DB19B;
+    --leaf-d-color: #8EC3B0;
+    --leaf-dr-color: #62B6B7;
+    --leaf-lg-color: #97DECE;
+    --leaf-l-color: #CBEDD5;
+    --green-light-color: #A5C9CA;
+    --green-dark-color: #A5C9CA;
+    --green-darker-color: #395B64;
+    --green-darkest-color: #2C3333;
+    --cyan-light-color: #A5F1E9;
+    --cyan-dark-color: #7FE9DE;
+    --yellow-light-color: #FFF6BF;
+    --yellow-dark-color: #FFEBAD;
     --primary-font: 'Poppins', sans-serif;
     --secondary-font: 'Titillium Web', sans-serif;
 }

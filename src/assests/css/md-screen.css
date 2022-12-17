@@ -4,19 +4,20 @@
       padding: 5px 10px;
       transition: all 0.3s ease;
    }
-   
+
    .productNavbar .productNavlist {
-      margin:0 2.5rem;
+      margin: 0 2.5rem;
       padding: 5px 10px;
       transition: all 0.3s ease;
    }
 
-   .productNavbar .productNavlist:hover{
+   .productNavbar .productNavlist:hover {
       color: black !important;
       background-color: var(--leaf-lightest-color);
       border-radius: 5px;
    }
-   #cancel{
+
+   #cancel {
       display: flex;
       justify-content: center;
       align-items: center;
