@@ -2,6 +2,7 @@ import React from "react";
 import Productbars from "../jsx/Productbars";
 import Categorybar from "../desktop/Categorybar";
 import Sale from "../jsx/Sale";
+import Cards from "../jsx/Cards";
 
 const Main = () => {
   return (
@@ -11,6 +12,9 @@ const Main = () => {
       </div>
       <Categorybar />
       <Sale/>
+      <div className="flex justify-start items-center cards overflow-x-scroll my-4 w-screen">
+      <Cards/>
+      </div>
     </>
   );
 };
