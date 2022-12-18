@@ -171,14 +171,14 @@ const Footer = () => {
             © {year} <strong className="primary-color">Kannu Mandora</strong>
             <a
               href="https://instagram.com/psy.codes"
-              className="text-gray-600 ml-1"
+              className="leaf-dr-color ml-1"
               target="_blank"
               rel="noopener noreferrer"
             >
               @psy.codes
             </a>
           </p>
-          <span className="sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center text-gray-500 text-sm">
+          <span className="sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center leaf-dr-color text-sm">
             <a href="https://github.com/Kannu-Mandora">
               Check Out My GitHub Repositories
             </a>
