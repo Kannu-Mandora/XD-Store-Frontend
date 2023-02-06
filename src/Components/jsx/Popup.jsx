@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import cancel from "../../assests/images/Animated Icons/cancel.png";
 // todo We need to use useState/ useEffect for dynamic rendering the data fields and the switch login/signup .
 const Popup = (props) => {
   const [login, setLogin] = useState({
@@ -36,7 +37,7 @@ const Popup = (props) => {
           </span>
         </div>
         <div className="flex flex-col items-center justify-start w-96 h-96 bg-quaternary-color text-white relative">
-        <img src={require("../../assests/images/Animated Icons/cancel.png")} alt="Cancel" className={`w-10 absolute top-0 -right-14 ${props.cancelClassName} `}  onClick={hide}  />
+        <img src={cancel} alt="Cancel" className={`w-10 absolute top-0 -right-14 ${props.cancelClassName} `}  onClick={hide}  />
           <div className="flex flex-col mx-3 my-4">
             <label className="my-1 text-sm">
               Enter Mobile Number or Email Address
