@@ -2,7 +2,8 @@ import React from "react";
 import Productbars from "../jsx/Productbars";
 import Categorybar from "../desktop/Categorybar";
 import Sale from "../jsx/Sale";
-import Cards from "../jsx/Cards";
+import { Link } from "react-router-dom";
+import categories from "../../assests/json/categories.json"
 
 const Main = () => {
   return (
@@ -11,12 +12,18 @@ const Main = () => {
         <Productbars />
       </div>
       <Categorybar />
-      <Sale/>
-      <div className="flex flex-col">
-      <img src="https://ik.imagekit.io/egkxyv8la/sale-banner_o54ZFsooY8.png?ik-sdk-version=javascript-1.4.3&updatedAt=1671348120697" alt="" className="h-72" />
+      <Sale />
       <div className="flex justify-start items-center cards overflow-x-scroll my-4">
-      <Cards/>
-      </div>
+        {
+          categories.map((item) => {
+            return <Link to={item.category} key={item.id}>
+              <div className="flex flex-col justify-center items-center flex-wrap border w-40 px-2 py-3 rounded bg-leaf-dr-color">
+                <img src={item.source} alt="Laptop" className="w-32 h-32" />
+                <span className="text-white text-sm my-4">{item.category}</span>
+              </div>
+            </Link>
+          })
+        }
       </div>
     </>
   );

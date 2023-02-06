@@ -24,7 +24,7 @@ const Sale = () => {
   } else {
     return (
       <h1 className="text-center font-semibold py-2 my-auto text-xl text-white bg-quaternary-color px-2">
-        Sorry, Sale Closed . Sale Reopen On Saturday & Sunday Only.{" "}
+        Sorry, Sale Closed . Sale Reopen On Saturday & Sunday Only.
       </h1>
     );
   }
