@@ -26,13 +26,8 @@ const Navbar = () => {
             </NavLink>
           </div>
           <div className="navlist" >
-            <NavLink to="Wishlist" className="navlink">
-              <span>Wishlist</span>
-            </NavLink>
-          </div>
-          <div className="navlist" >
             <NavLink to="Cart" className="navlink">
-              <span>Cart</span>
+              <span>Cart Items: 0</span>
             </NavLink>
           </div>
           <Loginbtn/>

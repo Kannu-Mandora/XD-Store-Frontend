@@ -13,7 +13,7 @@ const Main = () => {
       </div>
       <Categorybar />
       <Sale />
-      <div className="flex justify-start items-center cards overflow-x-scroll my-4">
+      <div className="flex justify-start items-center cards scrollbar my-4 overflow-x-scroll">
         {
           categories.map((item) => {
             return <Link to={item.category} key={item.id}>
