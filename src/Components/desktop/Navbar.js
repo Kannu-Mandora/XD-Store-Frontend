@@ -2,7 +2,10 @@ import React from 'react'
 import { NavLink, Link } from 'react-router-dom'
 import Logo from '../jsx/Logo'
 import Loginbtn from '../jsx/Loginbtn'
+import { useSelector } from 'react-redux'
+
 const Navbar = () => {
+  const items = useSelector((state) => state.cart);
   return (
    <>
    <div className="max-lg:hidden flex flex-shrink justify-center items-center h-20 bg-leaf-dark-color ">
@@ -27,7 +30,7 @@ const Navbar = () => {
           </div>
           <div className="navlist" >
             <NavLink to="Cart" className="navlink">
-              <span>Cart Items: 0</span>
+              <span>Cart Items: {items.length}</span>
             </NavLink>
           </div>
           <Loginbtn/>

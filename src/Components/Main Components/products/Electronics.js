@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios';
 import Loader from '../../jsx/Loader';
+import { addToCart } from '../../../store/CartSlice';
+import { useDispatch } from 'react-redux';
+
 const Laptops = () => {
+    const dispatch = useDispatch();
     const [electronics, setElectronics] = useState([]);
     const [loading, setLoading] = useState(false);
     const products = async () => {
@@ -17,6 +21,9 @@ const Laptops = () => {
     useEffect(() => {
         products();
     }, [])
+    const handleAdd=(product)=>{
+        dispatch(addToCart(product));
+    }
     return (
         <>
             <div className='flexCenter' >
@@ -26,7 +33,7 @@ const Laptops = () => {
                 {
                     electronics.map((electronics) => {
                         return <div key={electronics.id} className='flex flex-col justify-center items-center relative  bg-gray-300 text-black py-5 rounded gap-4' >
-                            <button className='absolute right-3 top-0' >Cart--&gt;</button>
+                            <button className='absolute right-3 top-0' onClick={()=>handleAdd(electronics)} >Cart--&gt;</button>
                             <img src={electronics.image} alt="" title={electronics.title.substring(0, 20)} className='w-32 aspect-square mix-blend-multiply' loading='lazy' />
                             <h1>{electronics.title.substring(0, 20)}</h1>
                             <h3>Price: ${electronics.price}</h3>
