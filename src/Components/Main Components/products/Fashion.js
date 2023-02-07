@@ -1,8 +1,10 @@
 import axios from 'axios';
 import {useState, useEffect} from 'react'
-import { Rings } from 'react-loader-spinner';
 import Loader from '../../jsx/Loader';
+import {useDispatch} from 'react-redux';
+import {addToCart}  from "../../../store/CartSlice";
 const Fashion = () => {
+    const dispatch = useDispatch();
     const [mansFashion, setMansFashion] = useState([]);
     const [womensFashion, setWomensFashion] = useState([]);
     const [loading, setLoading] = useState(false);
@@ -21,6 +23,9 @@ const Fashion = () => {
     useEffect(()=>{
         products();
     }, [])
+    const handleAdd = (product) => {
+        dispatch(addToCart(product));
+    }
   return (
     <>
     <h1 className="text-center text-3xl font-medium py-4  ">Men's Fashion</h1>
@@ -33,7 +38,7 @@ const Fashion = () => {
     {
         mansFashion.map((fashion) => {
             return <div key={fashion.id} className='flex flex-col justify-center items-center relative bg-gray-200 text-black py-5 rounded gap-4 px-3' >
-                <button className='absolute right-3 top-0' >Cart--&gt;</button>
+                <button className='absolute right-3 top-0' onClick={()=> handleAdd(fashion)} >Cart--&gt;</button>
                 <img src={fashion.image} alt="" title={fashion.title.substring(0,20)} className='w-32 aspect-square mix-blend-multiply' loading='lazy' />
                 <h1>{fashion.title.substring(0, 20)}</h1>
                 <h3>Price: ${fashion.price}</h3>
@@ -52,7 +57,7 @@ const Fashion = () => {
     {
         womensFashion.map((fashion) => {
             return <div key={fashion.id} className='flex flex-col justify-center items-center relative bg-gray-200 text-black py-5 rounded gap-4 px-3' >
-                <button className='absolute right-3 top-0' >Cart--&gt;</button>
+                <button className='absolute right-3 top-0' onClick={()=> handleAdd(fashion)} >Cart--&gt;</button>
                 <img src={fashion.image} alt="" title={fashion.title.substring(0,20)} className='w-32 aspect-square mix-blend-multiply' loading='lazy' />
                 <h1>{fashion.title.substring(0, 20)}</h1>
                 <h3>Price: ${fashion.price}</h3>

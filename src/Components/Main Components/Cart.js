@@ -10,7 +10,7 @@ const Cart = () => {
     return (
         <>
             <h1 className="text-center text-4xl my-3">Carts</h1>
-            <div className='flex justify-evenly flex-wrap items-center my-10' >
+            <div className='flex justify-center flex-wrap items-center my-10 gap-3' >
 
                 {
                     products.map((item) => {
