@@ -1,6 +1,7 @@
 import axios from 'axios';
 import {useState, useEffect} from 'react'
 import { Rings } from 'react-loader-spinner';
+import Loader from '../../jsx/Loader';
 const Fashion = () => {
     const [mansFashion, setMansFashion] = useState([]);
     const [womensFashion, setWomensFashion] = useState([]);
@@ -24,23 +25,14 @@ const Fashion = () => {
     <>
     <h1 className="text-center text-3xl font-medium py-4  ">Men's Fashion</h1>
         <div className='flexCenter' >
-        <Rings
-            height="80"
-            width="80"
-            color="#6B728E"
-            radius="6"
-            wrapperStyle={{}}
-            wrapperClass=""
-            visible={loading}
-            ariaLabel="rings-loading"
-        />
+        <Loader loading={loading} />
     </div>
-    <div className='grid grid-cols-2 justify-start items-center gap-6 my-5' >
+    <div className='grid sm:grid-cols-2 justify-center items-center gap-6 my-5' >
 
 
     {
         mansFashion.map((fashion) => {
-            return <div key={fashion.id} className='flex flex-col justify-center items-center relative bg-gray-200 text-black py-5 rounded gap-4' >
+            return <div key={fashion.id} className='flex flex-col justify-center items-center relative bg-gray-200 text-black py-5 rounded gap-4 px-3' >
                 <button className='absolute right-3 top-0' >Cart--&gt;</button>
                 <img src={fashion.image} alt="" title={fashion.title.substring(0,20)} className='w-32 aspect-square mix-blend-multiply' loading='lazy' />
                 <h1>{fashion.title.substring(0, 20)}</h1>
@@ -52,23 +44,14 @@ const Fashion = () => {
 
     <h1 className="text-center text-3xl font-medium py-4  ">Women's Fashion</h1>
     <div className='flexCenter' >
-        <Rings
-            height="80"
-            width="80"
-            color="#6B728E"
-            radius="6"
-            wrapperStyle={{}}
-            wrapperClass=""
-            visible={loading}
-            ariaLabel="rings-loading"
-        />
+        <Loader loading={loading} />
     </div>
-    <div className='grid grid-cols-2 justify-start items-center gap-6 my-5' >
+    <div className='grid sm:grid-cols-2 justify-center items-center gap-6 my-5' >
 
 
     {
         womensFashion.map((fashion) => {
-            return <div key={fashion.id} className='flex flex-col justify-center items-center relative bg-gray-200 text-black py-5 rounded gap-4' >
+            return <div key={fashion.id} className='flex flex-col justify-center items-center relative bg-gray-200 text-black py-5 rounded gap-4 px-3' >
                 <button className='absolute right-3 top-0' >Cart--&gt;</button>
                 <img src={fashion.image} alt="" title={fashion.title.substring(0,20)} className='w-32 aspect-square mix-blend-multiply' loading='lazy' />
                 <h1>{fashion.title.substring(0, 20)}</h1>
